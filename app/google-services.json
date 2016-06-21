@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "249523957408",
+    "firebase_url": "https://project-6929664392405365104.firebaseio.com",
+    "project_id": "project-6929664392405365104",
+    "storage_bucket": "project-6929664392405365104.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249523957408:android:208bc7ef72125ed2",
+        "android_client_info": {
+          "package_name": "com.kanawish.learningcircle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "249523957408-2jpenp2su22fu282i35n0fvf4lktkmqj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC9KBcBe-51gNIopUu03Y84y_x3DgwVGU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

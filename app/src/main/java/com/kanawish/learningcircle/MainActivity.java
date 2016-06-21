@@ -16,6 +16,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.Date;
 
 // New comment
+// New feature
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName() ; // "MainActivity"

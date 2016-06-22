@@ -1,5 +1,6 @@
 package com.kanawish.learningcircle;
 
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -20,6 +21,9 @@ import java.util.Date;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName() ; // "MainActivity"
+    public static final String KEY_USERNAME = "KEY_USERNAME";
+
+    private String username;
 
     static class MyStuff {
         String name = "Default";
@@ -95,5 +99,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // If savedInstanceState is null, this is a 'fresh Activity'
+        if( savedInstanceState == null ) {
+            username = "John Doe";
+        }
+
     }
+
+    // This method is called after onCreate(), presumably only when we have a savedInstanceState,
+    // and thus only if this is an Activity being recreated after a lifecycle event.
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        username = savedInstanceState.getString(KEY_USERNAME);
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putString(KEY_USERNAME, username);
+    }
+
 }
